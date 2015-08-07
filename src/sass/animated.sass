@@ -1,0 +1,15 @@
+$yellow: darken(#F9E034, 5%)
+
+@keyframes swing
+  from
+    transform: rotate(-15deg)
+
+  to
+    transform: rotate(15deg)
+
+.translucent
+  width: 100%
+
+  img
+    animation: swing 2s infinite alternate
+

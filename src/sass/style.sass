@@ -1,0 +1,133 @@
+@import "neutra"
+@import "medias"
+
+$grey: #343433
+$yellow: darken(#F9E034, 5%)
+
+%stretch
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+
+*
+  padding: 0
+  margin: 0
+
+body, html
+  width: 100%
+  height: 100%
+
+body
+  background: url('../img/gs.jpg') no-repeat center center fixed
+  background-size: cover
+  background-color: $grey
+  font-family: 'Cabin', sans-serif
+  color: $grey
+
+ul
+  list-style: none
+
+.centering
+  text-align: center
+
+a.button
+  color: $grey
+  text-decoration: none
+  border: solid 1px $grey
+  border-radius: 0.2em
+  padding: 0.5em 4.5em
+  box-sizing: border-box
+  transition: all .2s linear
+  line-height: 3.5em
+  cursor: pointer
+
+  &.big
+    font-size: 1.7em
+
+  &:hover
+    background: $grey
+    color: #fff
+
+%triangle
+  $size: 2em
+  width: 0
+  height: 0
+  border-top: $size solid transparent
+  border-right: $size solid transparent
+  border-bottom: $size solid $yellow
+
+h1, h2
+  @extend .centering
+  font-family: 'Roboto Slab', sans-serif
+  font-size: 2.5em
+  margin-bottom: 1.5em
+
+section
+  float: left
+  position: relative
+  box-sizing: border-box
+  width: 50%
+  height: 100%
+  z-index: 5
+
+  &.translucent
+    background: rgba($grey, 0.7)
+    color: #fff
+
+  &.opaque
+    $big: 70%
+    padding: 2.5%
+
+    &.yellow
+      background: $yellow
+      height: $big
+
+      & > div
+        color: #444
+
+    &.grey
+      background: $grey
+      color: #fff
+      height: 100% - $big
+
+      h1
+        color: $yellow
+
+    & > div
+      width: 80%
+      font-size: 1.3em
+      margin: 0 auto
+      margin-bottom: 2em
+
+.links
+  width: 100%
+  text-align: center
+
+  a
+    font-size: 1.2em
+    color: #fff
+    text-decoration: none
+    padding: 0 1em
+
+    &:hover
+      text-decoration: underline
+
+.logo
+  @extend %stretch
+  width: 21.5em
+  height: 9em
+
+  h1
+    @extend .centering
+    color: #fff
+    font-family: 'Roboto Slab', sans-serif
+    letter-spacing: 0.3em
+    font-size: 3.2em
+    margin-bottom: 0
+
+  img
+    width: 100%
+    margin-bottom: 2em
