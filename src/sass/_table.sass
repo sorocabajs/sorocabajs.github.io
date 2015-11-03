@@ -1,0 +1,31 @@
+$tgrey: lighten(#343433, 5%)
+$tyellow: lighten(#FDC915, 10%)
+
+.table
+  width: 80%
+  margin: 0 auto
+  text-align: left
+
+  .row
+    width: 100%
+    margin: 0.5em 0
+    padding: 1em
+    background: $tgrey
+    color: #fff
+
+    &:nth-child(even)
+      background: $tyellow
+      color: $tgrey
+
+    div
+      display: inline-block
+
+      &:nth-child(1)
+        width: 50%
+
+      &:nth-child(2)
+        width: 30%
+        margin: 0 5%
+
+      &:nth-child(3)
+        width: 10%

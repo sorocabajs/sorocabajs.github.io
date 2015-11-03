@@ -1,19 +1,26 @@
-@media screen and (max-width: 1225px)
+@media screen and (max-width: 1220px)
   body
-    font-size: 14px
+    font-size: 12px
 
-@media screen and (max-width: 895px)
-  body
-    font-size: 13px
+@media screen and (max-width: 920px)
+  .speakers,
+  .headline,
+  #link-speakers
+    display: none
 
-@media screen and (max-width: 785px)
-  body
-    background-size: auto !important
-    background-position: 0 0 !important
-
-  section
-    &.translucent
-      height: 40em !important
-
+  .table
     width: 100% !important
+
+  footer
+    display: block !important
     height: auto !important
+
+    article
+      width: 100% !important
+
+      &.info
+        padding-bottom: 1em
+
+@media screen and (max-width: 730px)
+  #link-list
+    display: none
