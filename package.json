@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/beerjs/sorocaba/issues"
   },
-  "homepage": "https://github.com/beerjs/sorocaba"
+  "homepage": "https://github.com/beerjs/sorocaba",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-sass": "^2.1.0"
+  }
 }
